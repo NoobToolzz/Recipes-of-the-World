@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 
+/* Get rid of bloody scrollbars. I love Stack Overflow. */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
 /* Navbar */
 body {
   margin: 0;
@@ -173,7 +189,7 @@ h1 {
 /* Cuisine information cards */
 .info-card {
   width: calc(100% - 40px);
-  max-width: 1625px;
+  max-width: 1650px;
   height: auto;
   border-radius: 15px;
   box-shadow: 1px 5px 60px 0px #100a886b;
