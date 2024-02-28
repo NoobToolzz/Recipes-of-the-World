@@ -1,6 +1,8 @@
 # Recipes of the World
 
 ### This website is still in progress. If you're seeing this, expect unfinished results.
+### UPDATE: I'm not committing here anymore, GitHub pages is broken when it comes to pulling files from sub-directories, leading to my styles and js scripts failing to load.
+### If you know how to fix this, feel free to create a PR.
 
 ## About <a name = "about"></a>
 
