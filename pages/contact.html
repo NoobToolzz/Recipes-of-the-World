@@ -20,9 +20,15 @@
       </nav>
     </div>
   </header>
-  <body>
-    <div class="bordered-heading">
-      <h1>Still a work in progress</h1>
+  <body onload="loader()" style="margin: 0">
+    <div id="loader"></div>
+
+    <div style="display: none" id="loaderDiv" class="animate-bottom">
+      <div class="bordered-heading">
+        <h1>Still a work in progress</h1>
+      </div>
     </div>
+
+    <script src="../js/loader.js"></script>
   </body>
 </html>

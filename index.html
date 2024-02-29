@@ -19,18 +19,23 @@
       </nav>
     </div>
   </header>
-  <body>
-    <div class="bordered-heading">
-      <h1>Recipes of The World</h1>
-    </div>
+  <body onload="loader()" style="margin: 0">
+    <div id="loader"></div>
 
-    <div
-      class="card"
-      data-editable-text="Check it out!"
-      contenteditable="true"
-      onclick="window.location.href='./pages/cuisines/indian.html';"
-    >
-      Indian Cuisines
+    <div style="display: none" id="loaderDiv" class="animate-bottom">
+      <div class="bordered-heading">
+        <h1>Recipes of The World</h1>
+      </div>
+
+      <div
+        class="card"
+        data-editable-text="Check it out!"
+        contenteditable="true"
+        onclick="window.location.href='./pages/cuisines/indian.html';"
+      >
+        Indian Cuisines
+      </div>
     </div>
+    <script src="./js/loader.js"></script>
   </body>
 </html>
