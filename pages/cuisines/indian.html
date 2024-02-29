@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes of The World - Indian Cuisines</title>
   </head>
-  <header>
-    <div class="container">
-      <h1 class="logo"></h1>
-
-      <nav>
-        <ul>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
   <body onload="loader()" style="margin: 0">
+    <header>
+      <div class="container">
+        <h1 class="logo"></h1>
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <div id="loader"></div>
 
     <div style="display: none" id="loaderDiv" class="animate-bottom">
@@ -40,7 +40,7 @@
             <div class="img-hover"></div>
           </div>
           <span>Chicken Tikka Masala</span>
-          <p class="job">
+          <p class="description">
             Chicken Tikka Masala is an Indian favourite along with Butter
             Chicken and Biryani. Serve with Basmati Rice, else add a side of
             chewy and fluffy Naan or basic Homemade Flatbreads to mop up the
@@ -64,7 +64,7 @@
             <div class="img-hover"></div>
           </div>
           <span>Biryani</span>
-          <p class="job">
+          <p class="description">
             Biryani is a celebration of all that is great about Indian food -
             the heady aromas, the vibrant colours, the fluffy rice and those
             addictive curry flavours. Make this Chicken Biryani with your
@@ -85,7 +85,7 @@
             <div class="img-hover"></div>
           </div>
           <span>Butter Chicken</span>
-          <p class="job">
+          <p class="description">
             Butter Chicken (Murgh Makhani) is one of the most popular curries in
             the world and yet happens to be one of the easiest! No hunting down
             hard to find ingredients, this chef recipe that makes the most
@@ -109,7 +109,7 @@
             <div class="img-hover"></div>
           </div>
           <span>Samosa</span>
-          <p class="job">
+          <p class="description">
             Indulge in the allure of these flawless pyramids of flaky pastry,
             generously filled with a delightful spiced potato mixture! Not all
             samosas are born equal—some fall short with dry textures,
@@ -118,12 +118,74 @@
             samosas, and now, behold the impeccable Samosa recipe presented here
             for your enjoyment.
           </p>
-          <a
-            href="https://www.recipetineats.com/samosa-recipe/"
-            target="_blank"
-          >
-            <button>Find out more</button>
-          </a>
+          <button id="samosaBtn">Recipe</button>
+        </div>
+
+        <div id="samosaModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Samosa Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>2 cups boiled and mashed potatoes</li>
+                <li>1 cup peas (optional)</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1 tablespoon oil</li>
+                <li>1 teaspoon ginger-garlic paste</li>
+                <li>1 teaspoon garam masala</li>
+                <li>1 teaspoon ground coriander</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>Fresh coriander leaves, chopped</li>
+                <li>Samosa wrappers or pastry sheets</li>
+                <li>Oil for frying</li>
+              </ul>
+              <h3>Prepare Filling:</h3>
+              <ol>
+                <li>In a pan, heat oil and add cumin seeds.</li>
+                <li>Add ginger-garlic paste and sauté until fragrant.</li>
+                <li>Mix in mashed potatoes, peas (if using), and spices.</li>
+                <li>Cook until well combined and aromatic.</li>
+                <li>
+                  Stir in fresh coriander leaves and let the filling cool.
+                </li>
+              </ol>
+              <h3>Assemble Samosas:</h3>
+              <ol>
+                <li>
+                  Take samosa wrappers or cut pastry sheets into triangles.
+                </li>
+                <li>
+                  Form a cone shape and fill with the prepared potato mixture.
+                </li>
+                <li>Seal the edges with water to form a triangular pocket.</li>
+              </ol>
+              <h3>Fry Samosas:</h3>
+              <ol>
+                <li>Heat oil in a pan for deep frying.</li>
+                <li>Fry samosas until golden brown and crispy.</li>
+              </ol>
+              <h3>Drain and Serve:</h3>
+              <ol>
+                <li>
+                  Remove samosas and place them on paper towels to drain excess
+                  oil.
+                </li>
+                <li>Serve hot with mint chutney or tamarind sauce.</li>
+              </ol>
+              <p>
+                Enjoy your homemade Samosas! Feel free to customize the filling
+                and adjust spices according to your taste preferences.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>Recipes of the World</h3>
+            </div>
+          </div>
         </div>
 
         <div class="info-card" id="card5">
@@ -135,23 +197,72 @@
           >
             <div class="img-hover"></div>
           </div>
-          <span>Dal</span>
-          <p class="job">
+          <span>Dhal</span>
+          <p class="description">
             You think it's impossible to make a Dal like Indian restaurants
             without hunting far and wide for exotic spices? Think again! Full of
             flavour, economical and nutritious, this Indian Dahl lentil curry is
-            outrageously delicious. And it's easy!
+            outrageously delicious. And it's easy!<br /><br />
           </p>
-          <a
-            href="https://www.recipetineats.com/dal-indian-lentil-curry/"
-            target="_blank"
-          >
-            <button>Find out more</button>
-          </a>
+          <button id="dhalBtn">Recipe</button>
         </div>
       </div>
 
-      <button class="back-button" onclick="history.back()">
+      <div id="dhalModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Dhal Recipe</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Prepare Filling:</h3>
+            <ol>
+              <li>In a pan, heat oil and add cumin seeds.</li>
+              <li>Add ginger-garlic paste and sauté until fragrant.</li>
+              <li>Mix in mashed potatoes, peas (if using), and spices.</li>
+              <li>Cook until well combined and aromatic.</li>
+              <li>Stir in fresh coriander leaves and let the filling cool.</li>
+            </ol>
+            <h3>Assemble Samosas:</h3>
+            <ol>
+              <li>Take samosa wrappers or cut pastry sheets into triangles.</li>
+              <li>
+                Form a cone shape and fill with the prepared potato mixture.
+              </li>
+              <li>Seal the edges with water to form a triangular pocket.</li>
+            </ol>
+            <h3>Fry Samosas:</h3>
+            <ol>
+              <li>Heat oil in a pan for deep frying.</li>
+              <li>Fry samosas until golden brown and crispy.</li>
+            </ol>
+            <h3>Drain and Serve:</h3>
+            <ol>
+              <li>
+                Remove samosas and place them on paper towels to drain excess
+                oil.
+              </li>
+              <li>Serve hot with mint chutney or tamarind sauce.</li>
+            </ol>
+            <p>
+              Enjoy your homemade Samosas! Feel free to customize the filling
+              and adjust spices according to your taste preferences.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <h3>Recipes of the World</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none" id="loaderDiv" class="animate-bottom">
+      <button
+        class="back-button"
+        style="margin-bottom: 20px"
+        onclick="history.back()"
+      >
         <span style="position: relative" class="back-button-content"
           >Go back</span
         >
@@ -160,6 +271,7 @@
 
     <script src="../../js/loader.js"></script>
     <script src="../../js/cardScaling.js"></script>
+    <script src="../../js/modalHandler.js"></script>
     <script src="../../js/randomCardColour.js"></script>
   </body>
 </html>
