@@ -54,11 +54,9 @@ nav ul {
   list-style: none;
 }
 
-nav li {
+nav ul li {
   display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
+  margin-left: 50px;
   position: relative;
 }
 
@@ -69,23 +67,19 @@ nav a {
   font-size: 14px;
 }
 
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background-color: #444;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
+/* Body rules */
+p.modal-text {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5;
+  background: linear-gradient(90deg, #f06, #9f6);
+  color: white;
 }
 
 /* Headers */
@@ -134,10 +128,74 @@ h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+h4 {
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff8a65 10%, #ff8a65 50%, #e57373 90%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 .bordered-heading {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* List items */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff512f 10%, #ff512f 50%, #dd2476 90%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ol li {
+  display: block;
+  counter-increment: my-awesome-counter;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 10px;
+  background: linear-gradient(90deg, #6bd4c1 10%, #bbedd9 90%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Home page cards */
