@@ -237,7 +237,7 @@ ol li {
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  background-color: lightblue;
+  background-color: var(--card-after-background);
   transition: all 0.5s;
 }
 

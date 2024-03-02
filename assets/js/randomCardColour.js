@@ -12,9 +12,14 @@ const getRandomColor = () =>
   `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
 const applyRandomColor = (element) => {
-  const color = getRandomColor();
-  element.style.background = color;
-  element.style.boxShadow = `1px 5px 30px 0px ${color}`;
+  const bgColor = getRandomColor();
+  const afterColor = getRandomColor();
+
+  element.style.background = bgColor;
+  element.style.boxShadow = `1px 5px 30px 0px ${bgColor}`;
+
+  // Apply a different colour when you hover over the card
+  element.style.setProperty("--card-after-background", afterColor);
 };
 
 getCards().forEach((card) => {
