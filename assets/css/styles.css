@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
 
-/* Get rid of bloody scrollbars. I love Stack Overflow. */
 html {
   overflow: scroll;
   overflow-x: hidden;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 ::-webkit-scrollbar {
@@ -46,6 +46,7 @@ header::after {
 
 nav {
   float: right;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 nav ul {
@@ -65,6 +66,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 /* Body rules */
@@ -343,6 +345,7 @@ ol li {
   text-transform: uppercase;
   font-size: 15px;
   transition: all 0.5s ease;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 .info-card button:hover {
@@ -350,6 +353,7 @@ ol li {
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 .info-card button:active {
@@ -359,6 +363,7 @@ ol li {
   box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
   transform: translateY(10px);
   transition: 100ms;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 /* Image dimensions for information cards */
@@ -385,6 +390,7 @@ ol li {
   border: none;
   cursor: pointer;
   text-align: center;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 .back-button:hover::before {
@@ -545,6 +551,7 @@ ol li {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 .close:hover,
