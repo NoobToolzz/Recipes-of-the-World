@@ -19,7 +19,11 @@
       </nav>
     </div>
   </header>
-  <body onload="loader()" style="margin: 0">
+  <!-- Added Sigma. This is temporary. -->
+  <body
+    onload="loader()"
+    style="margin: 0; background-image: url('https://i.gifer.com/6sHG.gif')"
+  >
     <div id="loader"></div>
 
     <div style="display: none" id="loaderDiv" class="animate-bottom">
@@ -40,10 +44,23 @@
         <div
           class="card"
           style="background: yellow"
-          data-editable-text="Check it out!"
+          data-editable-text="Yum!"
           onclick="window.location.href='./pages/cuisines/mexican/';"
         >
           Mexican Cuisines
+        </div>
+      </div>
+
+      <!-- Second div here to push the cards below the first two -->
+      <!-- Wow, comments are cool! I need to comment more often. -->
+      <div class="card-container">
+        <div
+          class="card"
+          style="background: red"
+          data-editable-text="Delicious!"
+          onclick="window.location.href='./pages/cuisines/finnish/';"
+        >
+          Finnish Cuisines
         </div>
       </div>
     </div>
