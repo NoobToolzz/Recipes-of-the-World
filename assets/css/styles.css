@@ -104,6 +104,36 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+h2 {
+  display: inline-block;
+  padding: 20px;
+  background: linear-gradient(90deg, #56ccf2 10%, #56ccf2 50%, #2f80ed 90%);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  display: inline-block;
+  padding: 15px;
+  background: linear-gradient(90deg, #fdca40 10%, #fdca40 50%, #f7981c 90%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 .bordered-heading {
   display: flex;
   justify-content: center;
@@ -119,6 +149,7 @@ h1 {
 
 .card {
   flex: 1;
+  margin-left: 20px;
   margin-right: 20px;
   position: relative;
   width: 260px;
