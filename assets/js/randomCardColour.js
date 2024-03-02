@@ -1,11 +1,22 @@
-const getCards = () => Array.from(document.querySelectorAll('[id*="card"]'));
+const getCards = () => {
+  const cardsWithLowerCase = Array.from(
+    document.querySelectorAll('[id*="card"]')
+  );
+  const cardsWithUpperCase = Array.from(
+    document.querySelectorAll('[id*="Card"]')
+  );
+  return [...cardsWithLowerCase, ...cardsWithUpperCase];
+};
 
 const getRandomColor = () =>
   `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-const boxShadowColor = "#100a886b";
+const applyRandomColor = (element) => {
+  const color = getRandomColor();
+  element.style.background = color;
+  element.style.boxShadow = `1px 5px 30px 0px ${color}`;
+};
 
 getCards().forEach((card) => {
-  card.style.background = getRandomColor();
-  card.style.boxShadow = `1px 5px 60px 0px ${boxShadowColor}`;
+  applyRandomColor(card);
 });

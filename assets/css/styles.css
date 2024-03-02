@@ -274,6 +274,7 @@ ol li {
 
 .card:hover {
   transform: scale(0.9);
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 /* Cuisine information cards */
