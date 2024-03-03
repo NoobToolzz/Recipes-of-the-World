@@ -120,7 +120,7 @@ p.modal-text {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 1.2em;
-  text-align: justify;
+  text-align: center; /* Center the text horizontally */
   line-height: 1.5;
   background: linear-gradient(90deg, #f06, #9f6);
   color: white;
