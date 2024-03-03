@@ -13,11 +13,6 @@ function showPage() {
   loaderMessages.style.display = "none"; // Hide messages when loader finishes
 }
 
-// Function to get a random time between 1000ms and 3000ms
-function getRandomTime() {
-  return Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000;
-}
-
 // Function to display loader messages every 0.5 seconds
 function displayMessages() {
   var messages = [
