@@ -43,12 +43,20 @@ header::after {
   float: left;
   padding: 10px 0;
   border-radius: 8px;
+  display: flex;
+  align-items: center; /* Align logo image and text vertically */
 }
 
 .logo img {
   border-radius: inherit;
   width: 50px;
   height: 45px;
+  margin-right: 10px; /* Adjust the spacing between image and text */
+}
+
+.logo .logo-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #fff; /* Set the color for the logo text */
 }
 
 nav {
@@ -65,7 +73,6 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
-
   position: relative;
 }
 
