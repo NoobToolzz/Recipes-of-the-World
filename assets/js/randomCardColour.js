@@ -12,8 +12,13 @@ const getRandomColor = () =>
   `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
 const applyRandomColor = (element) => {
-  const bgColor = getRandomColor();
-  const afterColor = getRandomColor();
+  let bgColor, afterColor;
+
+  // Generate random colors until afterColor is different from bgColor
+  do {
+    bgColor = getRandomColor();
+    afterColor = getRandomColor();
+  } while (bgColor === afterColor);
 
   element.style.background = bgColor;
   element.style.boxShadow = `1px 5px 30px 0px ${bgColor}`;
