@@ -46,7 +46,6 @@ header::after {
 
 nav {
   float: right;
-  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 nav ul {
@@ -55,9 +54,11 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav li {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 70px;
+  padding-top: 23px;
+
   position: relative;
 }
 
@@ -67,6 +68,26 @@ nav a {
   text-transform: uppercase;
   font-size: 14px;
   cursor: url(../images/cursor.png) 24 24, auto !important;
+}
+
+nav a:hover {
+  color: #000;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
 
 /* Body rules */
@@ -164,7 +185,7 @@ ol {
   padding: 0;
 }
 
-ul li {
+ul.defer li {
   display: inline-block;
   margin: 10px 10px;
   padding: 10px;
@@ -580,6 +601,27 @@ ol li {
 
 .modal-body {
   padding: 2px 16px;
+}
+
+.modal-body h3,
+.modal-body h4 {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #fdca40 10%, #fdca40 50%, #f7981c 90%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body h4 {
+  margin-top: 1;
 }
 
 .modal-footer {
