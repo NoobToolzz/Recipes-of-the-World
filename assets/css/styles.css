@@ -6,6 +6,14 @@ html {
   cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
+body {
+  margin: 0;
+  background: #222;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+/* Remove scrollbar (Stack Overflow is so good) */
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -17,13 +25,6 @@ html {
 }
 
 /* Navbar */
-body {
-  margin: 0;
-  background: #222;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 800;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -44,19 +45,26 @@ header::after {
   padding: 10px 0;
   border-radius: 8px;
   display: flex;
-  align-items: center; /* Align logo image and text vertically */
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 .logo img {
   border-radius: inherit;
   width: 50px;
   height: 45px;
-  margin-right: 10px; /* Adjust the spacing between image and text */
+  margin-right: 10px;
 }
 
 .logo .logo-text {
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #fff; /* Set the color for the logo text */
+  font-size: 18px;
 }
 
 nav {
@@ -81,7 +89,6 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-  cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
 nav a:hover {
@@ -538,17 +545,17 @@ ol li {
 
 /* Style for the modal */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
