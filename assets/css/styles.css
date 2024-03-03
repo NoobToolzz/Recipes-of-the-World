@@ -636,3 +636,68 @@ ol li {
   background-color: #5cb85c;
   color: white;
 }
+
+/* Profile card */
+body.about {
+  background-color: #09000b;
+  font-family: "Nunito", sans-serif;
+}
+
+.about-container {
+  padding: 100px 0;
+}
+
+.profile {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.profile h2 {
+  color: #0a0a0a;
+}
+
+.profile p {
+  color: rgba(10, 10, 10, 0.8);
+}
+
+.profile .image {
+  width: 75px;
+  height: 75px;
+  background: red;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transform-origin: bottom left;
+  box-shadow: 0 3px 15px rgba(10, 10, 10, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-image: url("https://cdn.discordapp.com/avatars/1112286581877899326/88cd2d2c0b80801e952e7156f0fb3f42.webp?size=1024&format=webp&width=0&height=256");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.profile:hover .image {
+  transform: scale(1.5);
+  border-radius: 10px;
+}
+
+.profile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0a0a0a;
+  cursor: url(../images/cursor.png) 24 24, auto !important;
+}
+
+.profile a i {
+  margin-right: 10px;
+}
