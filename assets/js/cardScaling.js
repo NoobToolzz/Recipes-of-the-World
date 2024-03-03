@@ -1,4 +1,6 @@
 // Credit: GPT (JavaScript hurts my brain.)
+// The script intention: Indicate that you've interacted with the card when you hover over it.
+// The card will be large by default, upon hover it will be slightly smaller.
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get all elements with an id containing the word "card"
