@@ -662,6 +662,7 @@ body.about {
 }
 
 .profile {
+  flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
   background-color: #fff;
@@ -691,7 +692,7 @@ body.about {
   transform-origin: bottom left;
   box-shadow: 0 3px 15px rgba(10, 10, 10, 0.1);
   transition: all 0.3s ease-in-out;
-  background-image: url("https://cdn.discordapp.com/avatars/1112286581877899326/88cd2d2c0b80801e952e7156f0fb3f42.webp?size=1024&format=webp&width=0&height=256");
+  background-image: url(../images/avatar.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -707,11 +708,19 @@ body.about {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-right: 10px;
   text-decoration: none;
   color: #0a0a0a;
   cursor: url(../images/cursor.png) 24 24, auto !important;
 }
 
-.profile a i {
-  margin-right: 10px;
+.profile a i,
+.profile a img {
+  margin-right: 5px;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
