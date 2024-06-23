@@ -2,6 +2,469 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="../../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <title>RecipeWorld | Italian Cuisines</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="RecipeWorld | Italian Cuisines" />
+    <meta property="og:description" content="Indulge in a variety of Italian cuisines on RecipeWorld." />
+    <meta property="og:image" content="https://noobtoolzz.github.io/assets/images/icon.png" />
+    <meta property="og:url" content="https://noobtoolzz.github.io/Recipes-of-the-World/pages/cuisines/italian/" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body onload="loader()" style="margin: 0">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../../../index.html">
+            <img src="../../../assets/images/icon.ico" alt="Logo" />
+            <span class="logo-text">RecipeWorld</span>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="loader"></div>
+    <div id="loaderMessages"></div>
+
+    <div style="display: none" id="loaderDiv" class="animate-bottom">
+      <div class="bordered-heading">
+        <h1 style="text-align: center">Italian Cuisines</h1>
+      </div>
+
+      <div class="card-container">
+        <div class="info-card" id="card1">
+          <div
+            class="img"
+            style="
+              background-image: url('https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Pizza</span>
+          <p class="description">
+            Pizza is a dish of Italian origin consisting of a usually round,
+            flat base of leavened wheat-based dough topped with tomatoes,
+            cheese, and often various other ingredients, which is then baked at
+            a high temperature, traditionally in a wood-fired oven.
+          </p>
+          <button id="pizzaBtn">Recipe</button>
+        </div>
+
+        <div id="pizzaModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Pizza Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the Dough</h4>
+              <ul class="defer">
+                <li>2 1/4 teaspoons (1 packet) active dry yeast</li>
+                <li>1 teaspoon sugar</li>
+                <li>3/4 cup warm water (around 110°F/43°C)</li>
+                <li>2 cups all-purpose flour</li>
+                <li>1 teaspoon salt</li>
+                <li>1 tablespoon olive oil</li>
+              </ul>
+
+              <h4>For the Pizza Sauce</h4>
+              <ul class="defer">
+                <li>1 can (14 oz) crushed tomatoes</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 teaspoon dried oregano</li>
+                <li>1 teaspoon dried basil</li>
+                <li>Salt and pepper to taste</li>
+              </ul>
+
+              <h4>Toppings</h4>
+              <ul class="defer">
+                <li>Shredded mozzarella cheese</li>
+                <li>
+                  Your favorite pizza toppings (e.g., pepperoni, bell peppers,
+                  mushrooms, olives)
+                </li>
+              </ul>
+
+              <h3>Mix Dry Ingredients</h3>
+              <ol>
+                <li>
+                  In a large mixing bowl, combine active dry yeast, sugar, and
+                  warm water. Let it sit for 5-10 minutes until frothy.
+                </li>
+              </ol>
+
+              <h3>Prepare Pizza Dough</h3>
+              <ol>
+                <li>
+                  In a large mixing bowl, combine flour and salt. Make a well in
+                  the center and add the yeast mixture and olive oil.
+                </li>
+                <li>
+                  Mix until a dough forms. Knead on a floured surface for about
+                  5-7 minutes until smooth.
+                </li>
+                <li>
+                  Place the dough in a greased bowl, cover with a damp cloth,
+                  and let it rise for 1-1.5 hours or until doubled in size.
+                </li>
+              </ol>
+
+              <h3>Preheat Oven</h3>
+              <ol>
+                <li>
+                  Preheat your oven to the highest temperature it can go
+                  (usually around 475°F/245°C).
+                </li>
+              </ol>
+
+              <h3>Prepare Pizza Sauce</h3>
+              <ol>
+                <li>
+                  Mix crushed tomatoes, minced garlic, oregano, basil, salt, and
+                  pepper in a bowl. Set aside.
+                </li>
+              </ol>
+
+              <h3>Roll Out Dough and Assemble Pizza</h3>
+              <ol>
+                <li>
+                  Roll out the dough on a floured surface and place it on a
+                  pizza stone or baking sheet.
+                </li>
+                <li>
+                  Spread pizza sauce over the dough and add shredded mozzarella
+                  and your favorite toppings.
+                </li>
+              </ol>
+
+              <h3>Bake</h3>
+              <ol>
+                <li>
+                  Bake in the preheated oven for 12-15 minutes, or until crust
+                  is golden and cheese is melted.
+                </li>
+              </ol>
+
+              <h3>Garnish and Serve</h3>
+              <ol>
+                <li>
+                  Garnish with fresh basil leaves, grated Parmesan, and red
+                  pepper flakes if desired.
+                </li>
+                <li>Slice and enjoy your homemade pizza!</li>
+              </ol>
+
+              <p class="modal-text">
+                Feel free to customize your pizza with various toppings and
+                experiment with different cheeses and sauces. Enjoy your
+                homemade pizza straight from the oven!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h4>Recipes of the World</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card2">
+          <div
+            class="img"
+            style="
+              background-image: url('https://food-images.files.bbci.co.uk/food/recipes/arancine_al_rag_11849_16x9.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Arancini</span>
+          <p class="description">
+            Arancini, also arancine, are Italian rice balls that are stuffed,
+            coated with breadcrumbs and deep-fried. They are a staple of
+            Sicilian cuisine.
+          </p>
+          <button id="aranciniBtn">Recipe</button>
+        </div>
+
+        <div id="aranciniModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Arancini Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the Risotto</h4>
+              <ul class="defer">
+                <li>1 cup Arborio rice</li>
+                <li>1/2 cup dry white wine</li>
+                <li>4 cups chicken or vegetable broth, heated</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>Salt and pepper to taste</li>
+                <li>2 tablespoons butter</li>
+                <li>1/2 cup diced mozzarella cheese</li>
+              </ul>
+
+              <h4>For the Arancini Coating</h4>
+              <ul class="defer">
+                <li>1 cup all-purpose flour</li>
+                <li>2 large eggs, beaten</li>
+                <li>1 cup fine breadcrumbs</li>
+                <li>Vegetable oil for frying</li>
+              </ul>
+
+              <h4>For the Filling (optional)</h4>
+              <ul class="defer">
+                <li>Additional diced mozzarella cheese</li>
+                <li>Peas, cooked</li>
+                <li>Bolognese sauce</li>
+              </ul>
+
+              <h3>Prepare Risotto</h3>
+              <ol>
+                <li>
+                  In a large pan, toast Arborio rice over medium heat for a few
+                  minutes.
+                </li>
+                <li>Deglaze with white wine and cook until absorbed.</li>
+                <li>
+                  Gradually add warm broth, stirring frequently until rice is
+                  creamy and cooked al dente.
+                </li>
+                <li>
+                  Stir in Parmesan, salt, pepper, butter, and diced mozzarella.
+                  Allow to cool.
+                </li>
+              </ol>
+
+              <h3>Form Arancini Balls</h3>
+              <ol>
+                <li>Take a scoop of risotto and flatten it in your hand.</li>
+                <li>Place a small amount of optional filling in the center.</li>
+                <li>
+                  Enclose the filling, shaping the mixture into golf ball-sized
+                  arancini.
+                </li>
+              </ol>
+
+              <h3>Coat and Fry</h3>
+              <ol>
+                <li>
+                  Roll each arancini in flour, dip in beaten eggs, and coat with
+                  breadcrumbs.
+                </li>
+                <li>
+                  Heat vegetable oil in a pan and fry arancini until golden
+                  brown on all sides.
+                </li>
+                <li>Drain on paper towels to remove excess oil.</li>
+              </ol>
+
+              <h3>Serve</h3>
+              <ol>
+                <li>
+                  Serve arancini hot, optionally with marinara or tomato sauce
+                  for dipping.
+                </li>
+              </ol>
+
+              <p class="modal-text">
+                Arancini are perfect as appetizers or snacks. Get creative with
+                different fillings or enjoy them as they are!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h4>Recipes of the World</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card3">
+          <div
+            class="img"
+            style="
+              background-image: url('https://www.allrecipes.com/thmb/yiUEE66b3SCDA84OKntTVmrLkbE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-focaccia-4x3-c31fc9a354874f1fabf60bd0bbc82293.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Focaccia</span>
+          <p class="description">
+            Focaccia is a flat leavened oven-baked Italian bread. In some
+            contemporary places, such as Rome, it is a style of pizza, also
+            called pizza bianca. Focaccia may be served as a side dish or as
+            sandwich bread and it may be round, rectangular, or square shape.
+          </p>
+          <button id="focacciaBtn">Recipe</button>
+        </div>
+
+        <div id="focacciaModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Focaccia Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the Dough</h4>
+              <ul class="defer">
+                <li>4 cups all-purpose flour</li>
+                <li>1 1/2 teaspoons salt</li>
+                <li>1 tablespoon sugar</li>
+                <li>1 tablespoon active dry yeast</li>
+                <li>1 1/2 cups warm water (110°F/43°C)</li>
+                <li>1/4 cup olive oil (plus extra for drizzling)</li>
+              </ul>
+
+              <h4>For Topping (Optional)</h4>
+              <ul class="defer">
+                <li>Cherry tomatoes, halved</li>
+                <li>Fresh rosemary</li>
+                <li>Olives, pitted and sliced</li>
+                <li>Sea salt flakes</li>
+                <li>Parmesan cheese, grated</li>
+              </ul>
+
+              <h3>Prepare Dough</h3>
+              <ol>
+                <li>
+                  In a bowl, mix warm water, sugar, and active dry yeast. Let it
+                  sit for 5-10 minutes until frothy.
+                </li>
+                <li>
+                  In a large mixing bowl, combine flour and salt. Add yeast
+                  mixture and olive oil.
+                </li>
+                <li>
+                  Knead the dough on a floured surface for 8-10 minutes until
+                  smooth and elastic.
+                </li>
+                <li>
+                  Place the dough in a greased bowl, cover, and let it rise for
+                  1-2 hours or until doubled in size.
+                </li>
+              </ol>
+
+              <h3>Shape and Second Rise</h3>
+              <ol>
+                <li>
+                  Punch down the risen dough and transfer it to a baking sheet.
+                </li>
+                <li>
+                  Press the dough into a rectangle or desired shape on the
+                  baking sheet.
+                </li>
+                <li>Cover and let it rise for an additional 30-45 minutes.</li>
+              </ol>
+
+              <h3>Preheat and Top</h3>
+              <ol>
+                <li>Preheat your oven to 425°F (220°C).</li>
+                <li>
+                  If desired, press halved cherry tomatoes, fresh rosemary,
+                  olives, sea salt, and grated Parmesan onto the surface of the
+                  dough.
+                </li>
+                <li>Drizzle with olive oil.</li>
+              </ol>
+
+              <h3>Bake</h3>
+              <ol>
+                <li>
+                  Bake in the preheated oven for 20-25 minutes or until golden
+                  brown and cooked through.
+                </li>
+              </ol>
+
+              <h3>Cool and Serve</h3>
+              <ol>
+                <li>
+                  Allow the focaccia to cool on a wire rack before slicing.
+                </li>
+                <li>Serve and enjoy your homemade focaccia!</li>
+              </ol>
+
+              <p class="modal-text">
+                Focaccia is a versatile bread that pairs well with dips,
+                cheeses, or makes a delicious sandwich. Experiment with toppings
+                to suit your taste.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h4>Recipes of the World</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card4">
+          <div
+            class="img"
+            style="
+              background-image: url('https://static01.nyt.com/images/2023/08/31/multimedia/RS-Lasagna-hkjl/RS-Lasagna-hkjl-superJumbo.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Lasagna</span>
+          <p class="description">
+            One of the most loved foods in the world is finally here! This is a
+            beautiful Italian Lasagna with layers of slow cooked Ragù Bolognese
+            and Besciamella cheese sauce. Though patience is required, it is
+            quite straight forward to make as you will see in the recipe video!
+          </p>
+          <button id="lasagnaBtn">Recipe</button>
+        </div>
+
+        <div id="lasagnaModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Lasagna Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the Meat Sauce</h4>
+              <ul class="defer">
+                <li>1 pound ground beef</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 can (28 oz) crushed tomatoes</li>
+                <li>1 can (14 oz) tomato sauce</li>
+                <li>1 can (6 oz) tomato paste</li>
+                <li>1/2 cup water</li>
+                <li>2 teaspoons dried basil</li>
+                <li>2 teaspoons dried oregano</li>
+                <li>1 teaspoon salt</li>
+                <li>1/2 teaspoon black pepper</li>
+              </ul>
+
+              <h4>For the Ricotta Filling</h4>
+              <ul class="defer">
+                <li>2 cups ricotta cheese</li>
+                <li>1 egg</li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" href="../../../assets/images/icon.ico" />
     <link rel="stylesheet" href="../../../assets/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

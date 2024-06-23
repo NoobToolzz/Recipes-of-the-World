@@ -2,6 +2,486 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="../../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <title>RecipeWorld | Finnish Cuisines</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="RecipeWorld | Finnish Cuisines" />
+    <meta property="og:description" content="Discover traditional Finnish cuisines on RecipeWorld." />
+    <meta property="og:image" content="https://noobtoolzz.github.io/assets/images/icon.png" />
+    <meta property="og:url" content="https://noobtoolzz.github.io/Recipes-of-the-World/pages/cuisines/finnish/" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body onload="loader()" style="margin: 0">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../../../index.html">
+            <img src="../../../assets/images/icon.ico" alt="Logo" />
+            <span class="logo-text">RecipeWorld</span>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="loader"></div>
+    <div id="loaderMessages"></div>
+
+    <div style="display: none" id="loaderDiv" class="animate-bottom">
+      <div class="bordered-heading">
+        <h1 style="text-align: center">Finnish Cuisines</h1>
+      </div>
+
+      <div class="card-container">
+        <div class="info-card" id="card1">
+          <div
+            class="img"
+            style="
+              background-image: url('https://media01.stockfood.com/largepreviews/ODEwNjkzNA==/00261514-Ruisleipae-bread-speciality-Finland.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Ruisleipä</span>
+          <p class="description">
+            Ruisleipä (rye bread) is a dark, sour bread produced extensively in
+            Finland. It is the most popular type of bread in Finland. It is a
+            staple in Finnish cuisine, and holds the status of the national
+            food.
+          </p>
+          <button id="ruisleipaBtn">Recipe</button>
+        </div>
+
+        <div id="ruisleipaModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Ruisleipä Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <ul class="defer">
+                <li>3 cups dark rye flour</li>
+                <li>1 cup whole grain rye flour</li>
+                <li>1 1/2 teaspoons salt</li>
+                <li>1 teaspoon caraway seeds (optional)</li>
+                <li>2 teaspoons active dry yeast</li>
+                <li>1 1/2 cups warm water (110°F/43°C)</li>
+                <li>
+                  1 tablespoon molasses or dark syrup (optional, for sweetness)
+                </li>
+              </ul>
+
+              <h3>Mix Dry Ingredients</h3>
+              <ol>
+                <li>
+                  In a large mixing bowl, combine dark rye flour, whole grain
+                  rye flour, salt, and caraway seeds.
+                </li>
+              </ol>
+
+              <h3>Activate Yeast</h3>
+              <ol>
+                <li>
+                  In a separate bowl, dissolve the active dry yeast in warm
+                  water. Allow it to sit for a few minutes until it becomes
+                  frothy.
+                </li>
+              </ol>
+
+              <h3>Combine Wet and Dry Ingredients</h3>
+              <ol>
+                <li>
+                  Pour the activated yeast mixture into the dry ingredients.
+                </li>
+                <li>
+                  Add molasses or dark syrup for a touch of sweetness if
+                  desired.
+                </li>
+              </ol>
+
+              <h3>Knead Dough</h3>
+              <ol>
+                <li>
+                  Mix the ingredients until a dough forms. Turn the dough onto a
+                  floured surface and knead for about 10 minutes until it
+                  becomes smooth and elastic.
+                </li>
+              </ol>
+
+              <h3>First Rise</h3>
+              <ol>
+                <li>
+                  Place the dough in a greased bowl, cover it with a damp cloth,
+                  and let it rise in a warm place for 1-2 hours or until it
+                  doubles in size.
+                </li>
+              </ol>
+
+              <h3>Shape and Second Rise</h3>
+              <ol>
+                <li>
+                  Punch down the risen dough, shape it into a loaf, and place it
+                  in a greased bread pan.
+                </li>
+                <li>Cover and let it rise for an additional 30-60 minutes.</li>
+              </ol>
+
+              <h3>Preheat and Bake</h3>
+              <ol>
+                <li>Preheat your oven to 375°F (190°C).</li>
+                <li>
+                  Bake the bread for about 30-40 minutes or until it sounds
+                  hollow when tapped on the bottom.
+                </li>
+              </ol>
+
+              <h3>Cool and Slice</h3>
+              <ol>
+                <li>
+                  Allow the Ruisleipä to cool in the pan for a few minutes
+                  before transferring it to a wire rack to cool completely.
+                </li>
+                <li>Once cooled, slice and enjoy!</li>
+              </ol>
+
+              <p class="modal-text">
+                This Ruisleipä is delicious with butter, cheese, or traditional
+                Finnish toppings like salmon. Adjust the sweetness and caraway
+                seeds according to your taste preferences.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h4>Recipes of the World</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card2">
+          <div
+            class="img"
+            style="
+              background-image: url('https://images.liquidblox.com/5ac5f866c89bf624d82846d0/5ac5f8c3df76710c014d24c0/originals/e1ff9d27119ef79158de41a237af3eb7509adbc8fb93a74112b5c72c635d4bf571ace3efafbd7861aae7fafbbff0d9e8048c5f046c11f6f85a14314bc587b22a/poronkaristys.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Poronkäristys</span>
+          <p class="description">
+            Poronkäristys is the traditional dish of Sámi people in Finland,
+            Norway and Sweden, prepared by sautéing reindeer meat. The dish
+            originates from the Arctic Lapland where the semi-nomadic,
+            indigenous people called Sámi have been herding reindeers for a very
+            long time.
+          </p>
+          <button id="poronkaristysBtn">Recipe</button>
+        </div>
+
+        <div id="poronkaristysModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Poronkäristys Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <ul class="defer">
+                <li>
+                  500g thinly sliced reindeer meat (or beef as a substitute)
+                </li>
+                <li>2 tablespoons butter</li>
+                <li>1 large onion, thinly sliced</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+                <li>Lingonberry sauce (for serving)</li>
+                <li>Mashed potatoes (for serving)</li>
+              </ul>
+
+              <h3>Prepare Reindeer Meat</h3>
+              <ol>
+                <li>
+                  If the reindeer meat is not already thinly sliced, use a sharp
+                  knife to cut it into thin slices.
+                </li>
+              </ol>
+
+              <h3>Sauté Onion</h3>
+              <ol>
+                <li>
+                  In a large skillet or pan, melt butter over medium heat.
+                </li>
+                <li>
+                  Add thinly sliced onions and sauté until they become golden
+                  brown.
+                </li>
+              </ol>
+
+              <h3>Add Reindeer Meat</h3>
+              <ol>
+                <li>Add the sliced reindeer meat to the skillet.</li>
+                <li>Sauté the meat until it is browned on both sides.</li>
+              </ol>
+
+              <h3>Add Water</h3>
+              <ol>
+                <li>Pour in 2 cups of water to the skillet.</li>
+                <li>Season with salt to taste.</li>
+              </ol>
+
+              <h3>Simmer</h3>
+              <ol>
+                <li>
+                  Reduce the heat to low and let the Poronkäristys simmer for
+                  about 1.5 to 2 hours until the meat is tender.
+                </li>
+              </ol>
+
+              <h3>Serve</h3>
+              <ol>
+                <li>
+                  Poronkäristys is traditionally served with mashed potatoes.
+                </li>
+                <li>
+                  Plate the sliced reindeer meat on top of the mashed potatoes.
+                </li>
+                <li>
+                  Pour some of the cooking liquid and sautéed onions over the
+                  meat.
+                </li>
+                <li>Serve with lingonberry sauce on the side.</li>
+              </ol>
+
+              <h3>Enjoy</h3>
+              <ol>
+                <li>
+                  Enjoy this traditional Finnish dish with the unique flavor of
+                  reindeer meat.
+                </li>
+              </ol>
+
+              <p class="modal-text">
+                Poronkäristys is often served with a side of pickles or
+                vegetables. Adjust the seasoning according to your taste
+                preferences, and savor the rich flavors of this Northern dish.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>Recipes of the World</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card3">
+          <div
+            class="img"
+            style="
+              background-image: url('https://kotiliesi.fi/suklaapossu/wp-content/uploads/sites/12/2020/10/leipajuusto-uunissa-scaled.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Leipäjuusto</span>
+          <p class="description">
+            Bread cheese, known in the United States as Finnish squeaky cheese,
+            is a Finnish fresh cheese traditionally made from cow's colostrum.
+            In America, cow's milk is generally used but can also be made with
+            goat milk. Commercially available versions are typically made from
+            cow's milk.
+          </p>
+          <button id="leipajuustoBtn">Recipe</button>
+        </div>
+
+        <div id="leipajuustoModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Leipäjuusto Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the cheese</h4>
+              <ul class="defer">
+                <li>1 liter of fresh milk (cow, goat, or a mix)</li>
+                <li>
+                  1/4 cup buttermilk or 1 tablespoon lemon juice (for curdling)
+                </li>
+                <li>A pinch of salt</li>
+              </ul>
+
+              <h4>For Serving</h4>
+              <ul class="defer">
+                <li>Fresh berries (lingonberries are traditional)</li>
+                <li>Honey or maple syrup</li>
+              </ul>
+
+              <h3>Prepare the Milk Mixture</h3>
+              <ol>
+                <li>
+                  In a large pot, gently heat the fresh milk until it's
+                  lukewarm.
+                </li>
+                <li>
+                  Add buttermilk or lemon juice to the milk to initiate
+                  curdling.
+                </li>
+                <li>
+                  Stir gently and let it sit for about an hour until curds form.
+                </li>
+              </ol>
+
+              <h3>Form the Curds</h3>
+              <ol>
+                <li>
+                  Once curds have formed, cut them into small pieces using a
+                  knife.
+                </li>
+                <li>
+                  Gradually heat the curds while stirring constantly. Do not let
+                  it boil.
+                </li>
+              </ol>
+
+              <h3>Strain and Shape</h3>
+              <ol>
+                <li>
+                  Line a colander with cheesecloth or a clean kitchen towel.
+                </li>
+                <li>Pour the curds into the colander to separate the whey.</li>
+                <li>
+                  Gather the cloth around the curds and shape them into a round,
+                  flat disc.
+                </li>
+              </ol>
+
+              <h3>Press and Cool</h3>
+              <ol>
+                <li>
+                  Place a weight (like a heavy plate) on top of the wrapped
+                  curds to press them.
+                </li>
+                <li>
+                  Let it cool and solidify for a few hours or overnight in the
+                  refrigerator.
+                </li>
+              </ol>
+
+              <h3>Serve</h3>
+              <ol>
+                <li>Slice the Leipäjuusto into wedges.</li>
+                <li>
+                  Heat a skillet and lightly brown the cheese on both sides
+                  until it gets a golden color and a slightly crispy texture.
+                </li>
+              </ol>
+
+              <h3>Serve Warm</h3>
+              <ol>
+                <li>
+                  Serve the Leipäjuusto warm with fresh berries and a drizzle of
+                  honey or maple syrup.
+                </li>
+              </ol>
+
+              <h3>Enjoy</h3>
+
+              <ol>
+                <li>
+                  Savor the mild and slightly sweet flavor of Leipäjuusto with
+                  the contrasting tartness of berries and the sweetness of honey
+                  or maple syrup.
+                </li>
+              </ol>
+
+              <p class="modal-text">
+                Leipäjuusto is a delightful Finnish treat, and its mild taste
+                pairs well with various toppings and accompaniments. Adjust
+                sweetness and serving options to suit your preferences.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <h3>Recipes of the World</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" id="card4">
+          <div
+            class="img"
+            style="
+              background-image: url('https://jernejkitchen.com/sites/default/files/finska-lososa-juha-04-jernejkitchen.jpg');
+            "
+          >
+            <div class="img-hover"></div>
+          </div>
+          <span>Lohikeitto</span>
+          <p class="description">
+            Finnish Salmon Soup, or Lohikeitto, is a simple Nordic salmon
+            chowder and a comforting 30 minute meal made with a light cream
+            broth, melt-in-your-mouth chunks of salmon, and tons of fresh dill!
+          </p>
+          <button id="lohikeittoBtn">Recipe</button>
+        </div>
+
+        <div id="lohikeittoModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Lohikeitto Recipe</h2>
+            </div>
+            <div class="modal-body">
+              <h3>Ingredients</h3>
+              <br />
+
+              <h4>For the soup</h4>
+              <ul class="defer">
+                <li>500g fresh salmon fillets, cut into cubes</li>
+                <li>3 medium-sized potatoes, peeled and diced</li>
+                <li>1 leek, sliced</li>
+                <li>2 carrots, peeled and sliced</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 bay leaves</li>
+                <li>1 liter fish or vegetable broth</li>
+                <li>300ml heavy cream</li>
+                <li>Salt and white pepper to taste</li>
+                <li>2 eggs (optional)</li>
+                <li>Fresh dill for garnish</li>
+              </ul>
+
+              <h4>For Serving</h4>
+              <ul class="defer">
+                <li>Rye bread or Finnish-style bread</li>
+              </ul>
+
+              <h3>Prepare Vegetables</h3>
+              <ol>
+                <li>Peel and dice the potatoes.</li>
+                <li>Slice the leek and carrots.</li>
+                <li>Finely chop the onion.</li>
+              </ol>
+
+              <h3>Cook Vegetables</h3>
+              <ol>
+                <li>
+                  In a large pot, sauté the onion in a bit of oil until it
+                  becomes translucent.
+                </li>
+                <li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" href="../../../assets/images/icon.ico" />
     <link rel="stylesheet" href="../../../assets/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
